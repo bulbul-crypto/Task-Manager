@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.try_2">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo1"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".WTH_HLTH_page_Final"></activity>
+        <activity android:name=".WTH_HLTH_page_Three" />
+        <activity android:name=".WTH_HLTH_page_Two" />
+        <activity android:name=".WTH_HLTH_page_One" />
+        <activity android:name=".WTH_UND_page_Final" />
+        <activity android:name=".WTH_UND_page_Three" />
+        <activity android:name=".WTH_UND_page_Two" />
+        <activity android:name=".WTH_UND_page_One" />
+        <activity android:name=".WTH_page_Two" />
+        <activity android:name=".WTH_Page_One" />
+        <activity android:name=".TS_Page_Four" />
+        <activity android:name=".TS_Page_Three" />
+        <activity android:name=".TS_Page_Two" />
+        <activity android:name=".HTP_Page_one" />
+        <activity android:name=".TS_Page_One" />
+        <activity
+            android:name=".HomePageND"
+            android:label="@string/title_activity_home_page_nd"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.try_2.MainActivity" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".HomePage" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name=".ReminderBroadcast" />
+    </application>
+
+</manifest>
