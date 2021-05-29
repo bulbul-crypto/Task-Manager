@@ -1,3 +1,8 @@
+
+
+// This file handles Splash Screen
+
+
 package com.example.try_2;
 
 import androidx.appcompat.app.AppCompatActivity;
