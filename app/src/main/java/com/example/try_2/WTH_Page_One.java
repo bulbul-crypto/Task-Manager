@@ -1,3 +1,8 @@
+
+
+// This file handles the module of calculating BMI and switch on to different activities according to that value to provide health tips
+
+
 package com.example.try_2;
 
 import androidx.appcompat.app.AppCompatActivity;
