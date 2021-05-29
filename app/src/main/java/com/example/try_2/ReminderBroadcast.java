@@ -1,3 +1,9 @@
+
+// This file handles the function of setting notifications and reminder of a particular task that has been sorted by task scheduler
+
+// Manifest.xml file also contains some infos about this file
+
+
 package com.example.try_2;
 
 import android.content.BroadcastReceiver;
