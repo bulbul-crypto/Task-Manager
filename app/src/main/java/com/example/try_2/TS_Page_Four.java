@@ -1,3 +1,12 @@
+
+// This file is a part of task scheduler module
+
+// It handles the calculation of time on which the specific sorted task will start and sets reminder of notification
+
+// TS_Page_Four.java and TS_Page_Three.java handles all the task scheduler module related works
+
+
+
 package com.example.try_2;
 
 import androidx.appcompat.app.AppCompatActivity;
