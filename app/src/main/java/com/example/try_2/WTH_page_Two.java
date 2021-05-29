@@ -1,3 +1,9 @@
+
+// This file is part of Health Tips Module
+
+// Watch files with 'WTH' prefix for related infos
+
+
 package com.example.try_2;
 
 import androidx.appcompat.app.AppCompatActivity;
