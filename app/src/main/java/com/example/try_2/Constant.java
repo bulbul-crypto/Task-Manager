@@ -2,6 +2,11 @@ package com.example.try_2;
 
 import java.util.ArrayList;
 
+
+// This file contains all the static variable, methods and constants of the project.
+
+// It helps to hold specific values while switching from one activity to another
+
 public class Constant {
 
   private static ArrayList<Task> arraylist;
