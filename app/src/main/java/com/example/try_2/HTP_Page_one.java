@@ -1,3 +1,8 @@
+
+// This file handles the module of weather update
+
+// It uses API from openweathermap.org
+
 package com.example.try_2;
 
 import androidx.appcompat.app.AppCompatActivity;
