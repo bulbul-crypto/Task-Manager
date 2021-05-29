@@ -1,3 +1,11 @@
+
+// TS_Page_Four.java and TS_Page_Three.java handles all the task scheduler module related works
+
+// This file sorts the inputted tasks according to job scheduling algorithm
+
+// Main file in task scheduler module
+
+
 package com.example.try_2;
 
 import androidx.appcompat.app.AppCompatActivity;
