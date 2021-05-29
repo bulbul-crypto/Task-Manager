@@ -1,3 +1,7 @@
+
+// Adapter class for displaying sorted tasks
+
+
 package com.example.try_2;
 
 import android.content.Context;
