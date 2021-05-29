@@ -1,3 +1,10 @@
+
+// Task class
+
+// In SDD, this class was mentioned
+
+
+
 package com.example.try_2;
 
 /*public class Task {
