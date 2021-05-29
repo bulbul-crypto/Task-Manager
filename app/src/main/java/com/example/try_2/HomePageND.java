@@ -1,3 +1,11 @@
+
+
+// This is the file for home page screen
+
+// All the modules are initiated from this file
+
+// It also contains options to update navigation drawer menu. See below
+
 package com.example.try_2;
 
 import android.content.Intent;
@@ -42,7 +50,7 @@ public class HomePageND extends AppCompatActivity
             }
         });
 
-        final Button ts_button = findViewById(R.id.button_ts);
+        final Button ts_button = findViewById(R.id.button_ts);  // Switch to Task Scheduler Module
         ts_button.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -53,7 +61,7 @@ public class HomePageND extends AppCompatActivity
             }
         });
 
-        final Button htp_button = findViewById(R.id.button_htp);
+        final Button htp_button = findViewById(R.id.button_htp); // Switch to Weather Update Module
         htp_button.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -64,7 +72,7 @@ public class HomePageND extends AppCompatActivity
             }
         });
 
-        final Button wth_button = findViewById(R.id.button_wth);
+        final Button wth_button = findViewById(R.id.button_wth);  // Switch to Health Tips Module
         wth_button.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -123,6 +131,9 @@ public class HomePageND extends AppCompatActivity
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
         int id = item.getItemId();
+        
+        
+        //------------------------------------------ Navigation drawer menu options
 
         if (id == R.id.nav_home) {
             // Handle the camera action
