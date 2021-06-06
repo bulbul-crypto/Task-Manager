@@ -30,6 +30,7 @@ import androidx.appcompat.widget.Toolbar;
 
 import android.view.Menu;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class HomePageND extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -41,14 +42,14 @@ public class HomePageND extends AppCompatActivity
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = findViewById(R.id.fab);
+     /*   FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
             }
-        });
+        });*/
 
         final Button ts_button = findViewById(R.id.button_ts);  // Switch to Task Scheduler Module
         ts_button.setOnClickListener(new View.OnClickListener() {
@@ -83,6 +84,41 @@ public class HomePageND extends AppCompatActivity
             }
         });
 
+        final Button goals_btn =findViewById(R.id.button_goal);
+        goals_btn.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view){
+
+                Intent intent = new Intent(HomePageND.this,Goal_Activity_Page_1.class);
+                startActivity(intent);
+            }
+        });
+
+        final Button event_button = findViewById(R.id.button_event);  // Switch to Task Scheduler Module
+        event_button.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view){
+
+                Intent intent = new Intent(HomePageND.this,Event_Activity.class);
+                startActivity(intent);
+                Toast.makeText(HomePageND.this,"Event",Toast.LENGTH_LONG);
+            }
+        });
+
+        final Button exit_button = findViewById(R.id.button_exit);  // Switch to Task Scheduler Module
+        exit_button.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view){
+
+                // Intent intent = new Intent(HomePageND.this,TS_Page_Three.class);
+                //startActivity(intent);
+                Toast.makeText(HomePageND.this,"Event",Toast.LENGTH_LONG);
+                finish();
+            }
+        });
 
 
         DrawerLayout drawer = findViewById(R.id.drawer_layout);

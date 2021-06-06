@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -9,137 +9,310 @@
     tools:context=".HomePageND"
     tools:showIn="@layout/app_bar_home_page_nd">
 
-    <View
-        android:id="@+id/view4"
-        android:layout_width="0dp"
-        android:layout_height="145dp"
-        android:background="@drawable/gradient_bg"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.545"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:background="@drawable/gradient_bg"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
 
-    <View
-        android:id="@+id/view"
-        android:layout_width="0dp"
-        android:layout_height="195dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp"
-        android:background="@drawable/wave3"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.250" />
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="64dp"
+                    android:textSize="30sp"
+                    android:textColor="#ffffff"
+                    android:fontFamily="sans-serif-black"
+                    android:text="Dashboard Menu"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </LinearLayout>
 
-    <androidx.gridlayout.widget.GridLayout
-        android:layout_width="0dp"
-        android:layout_height="550dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/view4"
-        app:layout_constraintVertical_bias="0.28">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="200dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp">
 
-        <Button
-            android:id="@+id/button10"
-            android:layout_width="198dp"
-            android:layout_height="127dp"
-            android:text="Button"
-            app:layout_column="0"
-            app:layout_row="3" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="143dp"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp">
 
-        <Button
-            android:id="@+id/button_wth"
-            android:layout_width="198dp"
-            android:layout_height="127dp"
-            android:fontFamily="sans-serif"
-            android:text="Health Tips"
-            android:textAlignment="center"
-            android:textColor="#0033cc"
-            android:textColorHighlight="#FFFFFF"
-            android:textColorHint="#FFFFFF"
-            android:textColorLink="#FFFFFF"
-            android:textSize="14sp"
-            app:layout_column="0"
-            app:layout_row="2" />
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_marginRight="5dp"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:src="@mipmap/task"
+                                android:id="@+id/iv_task"
+                                android:layout_centerInParent="true"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/ts_button"
+                                android:textSize="16sp"
+                                android:textColor="#000000"
+                                android:id="@+id/tv_task"
+                                android:fontFamily="sans-serif-condensed"
+                                android:layout_centerInParent="true"
+                                android:layout_below="@+id/iv_task"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="10dp"
+                                />
+                            <Button
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/button_ts"
+                                android:background="@android:color/transparent"/>
+                        </RelativeLayout>
 
-        <Button
-            android:id="@+id/button8"
-            android:layout_width="198dp"
-            android:layout_height="127dp"
-            android:fontFamily="sans-serif"
-            android:text="To Do List"
-            android:textAlignment="center"
-            android:textColor="#0033cc"
-            android:textColorHighlight="#FFFFFF"
-            android:textColorHint="#FFFFFF"
-            android:textColorLink="#FFFFFF"
-            android:textSize="14sp"
-            app:layout_column="1"
-            app:layout_row="3" />
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:src="@mipmap/weather"
+                                android:id="@+id/iv_weather"
+                                android:layout_centerInParent="true"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/wth_button"
+                                android:textSize="16sp"
+                                android:textColor="#000000"
+                                android:id="@+id/tv_weather"
+                                android:fontFamily="sans-serif-condensed"
+                                android:layout_centerInParent="true"
+                                android:layout_below="@+id/iv_weather"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="10dp"
+                                />
+                            <Button
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/button_htp"
+                                android:background="@android:color/transparent"/>
+                        </RelativeLayout>
 
-        <Button
-            android:id="@+id/button_ts"
-            android:layout_width="198dp"
-            android:layout_height="127dp"
-            android:fontFamily="sans-serif"
-            android:text="@string/ts_button"
-            android:textAlignment="center"
-            android:textColor="#0033cc"
-            android:textColorHighlight="#FFFFFF"
-            android:textColorHint="#FFFFFF"
-            android:textColorLink="#FFFFFF"
-            android:textSize="14sp"
-            android:drawableTop="@drawable/ic_menu_manage"
-            app:layout_column="0"
-            app:layout_row="0" />
+                    </androidx.cardview.widget.CardView>
 
-        <Button
-            android:id="@+id/button6"
-            android:layout_width="198dp"
-            android:layout_height="127dp"
-            android:text="Button"
-            app:layout_column="1"
-            app:layout_row="2" />
 
-        <Button
-            android:id="@+id/button4"
-            android:layout_width="198dp"
-            android:layout_height="127dp"
-            android:text="Button"
-            app:layout_column="1"
-            app:layout_row="1" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="135dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp">
 
-        <Button
-            android:id="@+id/button_htp"
-            android:layout_width="198dp"
-            android:layout_height="127dp"
-            android:fontFamily="sans-serif"
-            android:text="Weather Update"
-            android:textColor="#0033cc"
-            android:textColorHighlight="#FFFFFF"
-            android:textColorHint="#FFFFFF"
-            android:textColorLink="#FFFFFF"
-            android:textSize="14sp"
-            app:layout_column="1"
-            app:layout_row="0" />
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_marginRight="5dp"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:src="@mipmap/health"
+                                android:id="@+id/iv_health_tips"
+                                android:layout_centerInParent="true"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/htp_str_button"
+                                android:textSize="16sp"
+                                android:textColor="#000000"
+                                android:id="@+id/tv_health_tips"
+                                android:fontFamily="sans-serif-condensed"
+                                android:layout_centerInParent="true"
+                                android:layout_below="@+id/iv_health_tips"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="10dp"
+                                />
+                            <Button
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/button_wth"
+                                android:background="@android:color/transparent"/>
+                        </RelativeLayout>
 
-        <Button
-            android:id="@+id/button5"
-            android:layout_width="198dp"
-            android:layout_height="127dp"
-            android:text="Button"
-            app:layout_column="0"
-            app:layout_row="1" />
-    </androidx.gridlayout.widget.GridLayout>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:src="@drawable/goal"
+                                android:id="@+id/iv_goal"
+                                android:layout_centerInParent="true"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/goal_button"
+                                android:textSize="16sp"
+                                android:textColor="#000000"
+                                android:id="@+id/tv_goal"
+                                android:fontFamily="sans-serif-condensed"
+                                android:layout_centerInParent="true"
+                                android:layout_below="@+id/iv_goal"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="10dp"
+                                />
+                            <Button
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/button_goal"
+                                android:background="@android:color/transparent"/>
+                        </RelativeLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="135dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_marginRight="5dp"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:src="@mipmap/event"
+                                android:id="@+id/iv_event"
+                                android:layout_centerInParent="true"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/event_btn"
+                                android:textSize="16sp"
+                                android:textColor="#000000"
+                                android:id="@+id/tv_event"
+                                android:fontFamily="sans-serif-condensed"
+                                android:layout_centerInParent="true"
+                                android:layout_below="@+id/iv_event"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="10dp"
+                                />
+                            <Button
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/button_event"
+                                android:background="@android:color/transparent"/>
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:src="@mipmap/exit"
+                                android:id="@+id/iv_exit"
+                                android:layout_centerInParent="true"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/exit_btn"
+                                android:textSize="16sp"
+                                android:textColor="#000000"
+                                android:id="@+id/tv_exit"
+                                android:fontFamily="sans-serif-condensed"
+                                android:layout_centerInParent="true"
+                                android:layout_below="@+id/iv_exit"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="10dp"
+                                />
+                            <Button
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/button_exit"
+                                android:background="@android:color/transparent"/>
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

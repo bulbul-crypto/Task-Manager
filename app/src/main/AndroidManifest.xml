@@ -29,6 +29,18 @@
         <activity android:name=".TS_Page_Two" />
         <activity android:name=".HTP_Page_one" />
         <activity android:name=".TS_Page_One" />
+        <activity android:name=".Goal_Activity_Page_1"
+            android:parentActivityName=".HomePageND"/>
+        <activity android:name=".Event_Activity"
+            android:parentActivityName=".HomePageND"/>
+
+        <activity android:name=".EventAddActivity"
+            android:label="@string/title_activity_add_event"/>
+
+        <activity android:name=".EventEditActivity"
+            android:label="@string/title_activity_edit_event"/>
+
+
         <activity
             android:name=".HomePageND"
             android:label="@string/title_activity_home_page_nd"
@@ -54,6 +66,15 @@
         </activity>
 
         <receiver android:name=".ReminderBroadcast" />
+
+
+        <receiver android:name=".AlarmReciever"/>
+
+        <receiver android:name=".BootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>

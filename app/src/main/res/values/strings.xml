@@ -16,5 +16,30 @@
     <string name="menu_send">Send</string>
 
     <string name="ts_button">Task Scheduler</string>
+    <string name="wth_button">Weather Update</string>
+    <string name="goal_button">Goals</string>
     <string name="htp_str_button">Health Tips</string>
+    <string name="event_btn">Events</string>
+    <string name="exit_btn">Exit</string>
+
+
+    <string name="title_activity_add_event">Add Event</string>
+    <string name="title_activity_edit_event">Edit Event</string>
+
+    <string name="add_event">Event</string>
+    <string name="details">Details</string>
+    <string name="date">Date</string>
+    <string name="time">Time</string>
+    <string name="repeat">Repeat</string>
+    <string name="repeat_off">Off</string>
+    <string name="repeat_no">Repetition Interval </string>
+    <string name="repeat_type">Type of Repetitions</string>
+
+    <string name="action_discard_event">Discard Event</string>
+    <string name="action_save_event">Save Event</string>
+
+    <string name="no_events">Click on the plus button below to begin creating your events!</string>
+    <string name="no_goals">Click on the plus button below to begin creating your goals!</string>
+
+
 </resources>

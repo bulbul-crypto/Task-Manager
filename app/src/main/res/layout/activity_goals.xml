@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".Goal_Activity_Page_1">
+
+    <include
+        android:id="@+id/ab_goals"
+        layout="@layout/action_bar_for_goal_page"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="55dp">
+        <TextView
+            android:id="@+id/tv_no_goals"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:padding="16dp"
+            android:gravity="center"
+            android:text="@string/no_goals"/>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_goals"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:nestedScrollingEnabled="true"
+            android:scrollbars="vertical"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+
+    </RelativeLayout>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/button_add_goal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="@dimen/fab_margin"
+        app:maxImageSize="50dp"
+        app:fabCustomSize="70dp"
+        app:backgroundTint="@android:color/holo_green_light"
+        app:srcCompat="@drawable/ic_baseline_add_24" />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/button_stat_goal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:fabCustomSize="70dp"
+        app:maxImageSize="50dp"
+        android:layout_gravity="bottom|left"
+        android:layout_margin="@dimen/fab_margin"
+        app:backgroundTint="@android:color/holo_green_light"
+        app:srcCompat="@mipmap/statistics" />
+    <include
+        layout="@layout/bottom_sheet_goal"/>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
